@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Play, Maximize2 } from "lucide-react";
 
-const VIDEO_SRC = "/assets/hermesworld/video/world-demo-720p.mp4";
-const POSTER_SRC = "/assets/hermesworld/video/world-demo-poster.jpg";
+const VIDEO_SRC = "/assets/hermeschiworld/video/world-demo-720p.mp4";
+const POSTER_SRC = "/assets/hermeschiworld/video/world-demo-poster.jpg";
 
 const bullets = [
   {
@@ -55,7 +55,7 @@ export function VideoPreview() {
               Preview
             </div>
             <h2 className="mt-3 font-display text-[36px] lg:text-[56px] leading-[1.05] text-parchment">
-              See HermesWorld in action.
+              See HermesChiWorld in action.
             </h2>
             <p className="mt-4 text-[16px] lg:text-[17px] text-parchment/70 font-body">
               Live systems, real agents, a world that reacts.
@@ -126,7 +126,7 @@ export function VideoPreview() {
           onClick={() => setShowModal(false)}
           role="dialog"
           aria-modal="true"
-          aria-label="HermesWorld preview video"
+          aria-label="HermesChiWorld preview video"
         >
           <div
             className="relative w-full max-w-[1080px] aspect-video rounded-xl overflow-hidden border border-gold/30 shadow-[0_0_80px_rgba(241,197,109,0.18)] bg-black"

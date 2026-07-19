@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>HermesWorld - Coming Soon</title>
-<meta name="description" content="HermesWorld V1 - the full Unity client launches soon. Download the Windows preview build today." />
+<title>HermesChiWorld - Coming Soon</title>
+<meta name="description" content="HermesChiWorld V1 - the full Unity client launches soon. Download the Windows preview build today." />
 <meta name="theme-color" content="#03080c" />
-<link rel="icon" href="/assets/hermesworld/art/hermesworld-logo-h.png" />
+<link rel="icon" href="/assets/hermeschiworld/art/hermeschiworld-logo-h.png" />
 <style>
   :root{--gold:#f4c66d;--gold-soft:rgba(244,198,109,.5);--bg:#020608;--bg2:#03080c;}
   html,body{margin:0;background:var(--bg);color:#fff4dc;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh;}
   .container{max-width:760px;margin:0 auto;padding:80px 28px 60px;text-align:center;}
-  .crest{width:128px;height:128px;margin:0 auto 28px;background:url('/assets/hermesworld/art/hermesworld-logo-h.png') center/cover;border-radius:24px;box-shadow:0 0 80px rgba(244,198,109,.35);}
+  .crest{width:128px;height:128px;margin:0 auto 28px;background:url('/assets/hermeschiworld/art/hermeschiworld-logo-h.png') center/cover;border-radius:24px;box-shadow:0 0 80px rgba(244,198,109,.35);}
   h1{font-size:clamp(28px,6vw,52px);letter-spacing:-.02em;color:var(--gold);font-weight:900;margin:0 0 12px;}
   .sub{color:rgba(255,244,220,.6);font-size:14px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:36px;}
   .lede{font-size:18px;line-height:1.6;color:#e6ddc1;margin-bottom:36px;max-width:580px;margin-left:auto;margin-right:auto;}
@@ -38,14 +38,14 @@
 <div class="container">
   <div class="crest"></div>
   <div class="status"><span class="dot"></span>V1 Now Shipping</div>
-  <h1 style="margin-top:24px;">HermesWorld</h1>
+  <h1 style="margin-top:24px;">HermesChiWorld</h1>
   <div class="sub">Greek-myth MMO · Unity 6 · Public Preview</div>
   <p class="lede">
     Walk into AgoraTown. Speak with Hermes, Apollo, Athena, Artemis, and the rest of the pantheon.
     Train under Master Kheiron. Reach level 3 to unlock the kingdom map.
   </p>
   <div class="actions">
-    <a href="https://github.com/outsourc-e/hermes-world-landing/releases" class="btn btn-primary">⬇ Download Windows Build</a>
+    <a href="https://github.com/borhandarabi/hermeschi-world-landing/releases" class="btn btn-primary">⬇ Download Windows Build</a>
     <a href="/" class="btn btn-ghost">Reserve your name</a>
   </div>
   <div class="features">
@@ -55,7 +55,7 @@
     </div>
     <div class="feature">
       <h3>The Portal</h3>
-      <p>Reach level 3 and walk through the portal to AgoraTown - the home of the gods of HermesWorld.</p>
+      <p>Reach level 3 and walk through the portal to AgoraTown - the home of the gods of HermesChiWorld.</p>
     </div>
     <div class="feature">
       <h3>14 Deities</h3>
@@ -70,13 +70,13 @@
     WebGL preview cooking. The Windows build is the full experience for now.
     Join <a href="https://discord.gg/agentd" style="color:var(--gold);">Discord</a> for early access.
   </p>
-  <footer>HermesWorld V1 · ${new Date().getFullYear()} Outsourced</footer>
+  <footer>HermesChiWorld V1 · ${new Date().getFullYear()} Outsourced</footer>
 </div>
 <script type="module" id="hw-cs-launch-check">
-import { supabase } from '/assets/hermesworld/auth/supabase-client.js?v=20260606sso';
+import { supabase } from '/assets/hermeschiworld/auth/supabase-client.js?v=20260606sso';
 (async()=>{try{const{data:{session}}=await supabase.auth.getSession();if(session?.access_token){location.replace('/play-webgl/launch.html');}}catch(e){}})();
 </script>
 <a class="hw-account-fixed" data-google-signin href="/signin/" style="position:fixed;top:14px;right:14px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(244,198,109,.12);border:1px solid rgba(244,198,109,.45);color:#f4c66d;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:.04em;font-family:Inter,ui-sans-serif,system-ui,sans-serif;"><span data-google-label>Sign in</span></a>
-<script type="module" src="/assets/hermesworld/auth/landing-auth.js?v=20260606sso"></script>
+<script type="module" src="/assets/hermeschiworld/auth/landing-auth.js?v=20260606sso"></script>
 </body>
 </html>

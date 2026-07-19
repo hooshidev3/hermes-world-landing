@@ -1,4 +1,4 @@
-# Contributing to hermes-world.ai
+# Contributing to hermeschiworld.ir
 
 ## Workflow
 
@@ -12,7 +12,7 @@ npm run lint
 npm run build
 ```
 
-4. Push your branch and open a PR against `outsourc-e/hermes-world-landing:main`.
+4. Push your branch and open a PR against `borhandarabi/hermeschi-world-landing:main`.
 5. Use the Cloudflare Pages PR preview for visual review.
 6. Merge only after review/approval. Do not push directly to `main`.
 
@@ -28,12 +28,12 @@ npm run dev
 
 - Vibe: premium dark fantasy MMO, warm golden-hour, verdigris glow.
 - Avoid generic SaaS visuals, off-palette neon, and pure flat black.
-- Keep the landing-page CTAs pointed at the playable world: `https://hermes-world.ai/play/`.
+- Keep the landing-page CTAs pointed at the playable world: `https://hermeschiworld.ir/play/`.
 
 ## Assets
 
 - Lovable-exported section artwork lives in `src/assets/`.
-- Existing production/social/brand assets are retained in `public/assets/hermesworld/` for stable URLs.
+- Existing production/social/brand assets are retained in `public/assets/hermeschiworld/` for stable URLs.
 - Optimize new large assets before committing.
 
 ## What not to do

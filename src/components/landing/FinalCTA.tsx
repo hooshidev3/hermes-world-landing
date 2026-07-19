@@ -30,7 +30,7 @@ export function FinalCTA() {
           </span>
         </h2>
         <p className="mt-6 mx-auto max-w-2xl text-[16px] lg:text-[18px] text-parchment/70 font-body leading-relaxed">
-          Enter HermesWorld and explore the first playable layer of Hermes
+          Enter HermesChiWorld and explore the first playable layer of Hermes
           Workspace: zones, quests, companions, sigils, and persistent agent
           progression.
         </p>

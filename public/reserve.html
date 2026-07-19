@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>Reserve your HermesWorld name</title>
-<meta name="description" content="Claim your HermesWorld username before launch. Founders get exclusive starter gear, sigil drops, and early access." />
+<title>Reserve your HermesChiWorld name</title>
+<meta name="description" content="Claim your HermesChiWorld username before launch. Founders get exclusive starter gear, sigil drops, and early access." />
 <meta name="theme-color" content="#03080c" />
-<link rel="icon" href="/assets/hermesworld/art/hermesworld-crest.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/hermesworld/art/hermesworld-crest.png" />
-<meta property="og:title" content="Reserve your HermesWorld name" />
-<meta property="og:description" content="Claim your username before HermesWorld launches. Limited founder rewards for early reservers." />
-<meta property="og:image" content="/assets/hermesworld/art/social-preview-hermes-5-2-v3.jpg?v=2" />
+<link rel="icon" href="/assets/hermeschiworld/art/hermeschiworld-crest.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/hermeschiworld/art/hermeschiworld-crest.png" />
+<meta property="og:title" content="Reserve your HermesChiWorld name" />
+<meta property="og:description" content="Claim your username before HermesChiWorld launches. Limited founder rewards for early reservers." />
+<meta property="og:image" content="/assets/hermeschiworld/art/social-preview-hermes-5-2-v3.jpg?v=2" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://hermes-world.ai/reserve" />
+<meta property="og:url" content="https://hermeschiworld.ir/reserve" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Reserve your HermesWorld name" />
-<meta name="twitter:description" content="Claim your username before HermesWorld launches. Founder gear for early reservers." />
+<meta name="twitter:title" content="Reserve your HermesChiWorld name" />
+<meta name="twitter:description" content="Claim your username before HermesChiWorld launches. Founder gear for early reservers." />
 <style>
 :root{--bg:#03080c;--panel:#071318;--panel2:#0b1820;--gold:#f4c66d;--gold2:#b97825;--gold3:#ffe5a8;--cyan:#78f0ff;--text:#fff4dc;--muted:#aab9b2;--faint:#61736f;--line:rgba(244,198,109,.24)}
 *{box-sizing:border-box}
@@ -60,11 +60,11 @@ form{background:var(--panel);border:1px solid rgba(244,198,109,.2);border-radius
 </head>
 <body>
 <div class="wrap">
-  <a class="back" href="/">← Back to HermesWorld</a>
+  <a class="back" href="/">← Back to HermesChiWorld</a>
   <div class="head">
     <div class="pill">Founder Reservations Open</div>
     <h1>Claim your name.</h1>
-    <p class="sub">HermesWorld launches soon. First reservers get founder gear, sigil drops, and early access to the world.</p>
+    <p class="sub">HermesChiWorld launches soon. First reservers get founder gear, sigil drops, and early access to the world.</p>
     <div class="counter" id="counter">loading reservations…</div>
   </div>
 
@@ -86,7 +86,7 @@ form{background:var(--panel);border:1px solid rgba(244,198,109,.2);border-radius
         <div class="hint">Optional. Used for in-world prize drops.</div>
       </div>
       <button class="btn" id="submit-btn" type="submit">Reserve my name</button>
-      <p class="foot">No password required. We'll email you when HermesWorld opens.</p>
+      <p class="foot">No password required. We'll email you when HermesChiWorld opens.</p>
     </form>
   </div>
 </div>
@@ -100,7 +100,7 @@ form{background:var(--panel);border:1px solid rgba(244,198,109,.2);border-radius
   var wrapper = document.getElementById('form-wrapper');
 
   function loadCounter(){
-    fetch('/api/hermesworld/reservations', { cache: 'no-store' })
+    fetch('/api/hermeschiworld/reservations', { cache: 'no-store' })
       .then(function(r){ return r.json(); })
       .then(function(d){
         if (d && d.ok) {
@@ -132,7 +132,7 @@ form{background:var(--panel);border:1px solid rgba(244,198,109,.2);border-radius
     btn.disabled = true;
     btn.innerHTML = '<span class="spinner"></span>Reserving…';
 
-    fetch('/api/hermesworld/reservations', {
+    fetch('/api/hermeschiworld/reservations', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({
@@ -152,8 +152,8 @@ form{background:var(--panel);border:1px solid rgba(244,198,109,.2);border-radius
             '<span class="moon">🌙</span>' +
             "<h2>You're in.</h2>" +
             '<p><strong>' + escapeHtml(res.data.reservation.desiredName) + '</strong> is reserved for you. ' +
-            "We'll email you when HermesWorld opens for founders.</p>" +
-            '<a class="btn" href="/" style="text-decoration:none">Back to HermesWorld</a>' +
+            "We'll email you when HermesChiWorld opens for founders.</p>" +
+            '<a class="btn" href="/" style="text-decoration:none">Back to HermesChiWorld</a>' +
           '</div>';
         return;
       }
@@ -179,6 +179,6 @@ form{background:var(--panel);border:1px solid rgba(244,198,109,.2);border-radius
 })();
 </script>
 <a class="hw-account-fixed" data-google-signin href="/signin/" style="position:fixed;top:14px;right:14px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(244,198,109,.12);border:1px solid rgba(244,198,109,.45);color:#f4c66d;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:.04em;font-family:Inter,ui-sans-serif,system-ui,sans-serif;"><span data-google-label>Sign in</span></a>
-<script type="module" src="/assets/hermesworld/auth/landing-auth.js?v=20260606sso"></script>
+<script type="module" src="/assets/hermeschiworld/auth/landing-auth.js?v=20260606sso"></script>
 </body>
 </html>

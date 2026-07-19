@@ -22255,7 +22255,7 @@ function PlaygroundAdminPanel() {
             /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("span", { className: "text-[10px] uppercase tracking-[0.18em] text-white/45", children: "Dashboard admin" }),
             isHistorical && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("span", { className: "rounded-full border border-violet-300/35 bg-violet-300/15 px-2 py-0.5 text-[9px] font-bold uppercase tracking-[0.18em] text-violet-100", children: "Snapshot" })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "mt-1 text-base font-bold tracking-tight text-white", children: "HermesWorld Control Room" }),
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "mt-1 text-base font-bold tracking-tight text-white", children: "HermesChiWorld Control Room" }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "mt-0.5 text-[11px] text-white/50", children: isHistorical ? `Viewing ${prettyDateLabel(selectedDate)}. Live counters are paused while you scrub history.` : "Human relay analytics. NPC ambient chatter is client-side flavor and intentionally excluded." })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "text-right text-[10px] text-white/45", children: [
@@ -22715,7 +22715,7 @@ var useWorkspaceStore = create()(
       setChatPanelSessionKey: (key) => set({ chatPanelSessionKey: key })
     }),
     {
-      name: "hermes-workspace-v1",
+      name: "hermeschi-v1",
       partialize: (state3) => ({
         sidebarCollapsed: state3.sidebarCollapsed,
         fileExplorerCollapsed: state3.fileExplorerCollapsed,
@@ -22778,7 +22778,7 @@ var BOT_PROFILES = {
       avatar: "eros",
       color: "#f472b6",
       spawn: [7, 0, 7],
-      lines: ["promptcraft is wildly fun", "who else is on Hermes Workspace?", "see u in the Grove"]
+      lines: ["promptcraft is wildly fun", "who else is on HermesChi?", "see u in the Grove"]
     },
     {
       id: "bot-agora-3",
@@ -23360,10 +23360,10 @@ var NPC_DIALOG = {
     name: "Athena",
     title: "Guide of the Realm",
     color: "#a78bfa",
-    opening: "Welcome, builder. I am Athena. This is Agora \u2014 the heart of HermesWorld. Take the Sigil from the pedestal beside me and I will open the Training portal so you can learn the verbs of this place.",
+    opening: "Welcome, builder. I am Athena. This is Agora \u2014 the heart of HermesChiWorld. Take the Sigil from the pedestal beside me and I will open the Training portal so you can learn the verbs of this place.",
     lore: [
       "These Training Grounds teach the Hermes loop: move, equip, speak, remember, and build.",
-      "Long before Hermes Workspace, agents were tools. We invited them into a world instead.",
+      "Long before HermesChi, agents were tools. We invited them into a world instead.",
       "Start here, then walk through the Forge Gate when you are ready to build with Hermes for real.",
       "I am scripted for this hackathon. Soon a real Hermes agent will speak through me with deeper memory."
     ],
@@ -23399,7 +23399,7 @@ var NPC_DIALOG = {
     opening: "Hail, traveler. I am Apollo. Every world here begins as a song \u2014 a prompt that becomes a place.",
     lore: [
       "The Forge is loud. The Grove is melodic. The Arena is percussion. I write the score for each.",
-      "When Hermes Workspace ships music generation in a quest, I am the one composing."
+      "When HermesChi ships music generation in a quest, I am the one composing."
     ],
     choices: [
       {
@@ -23503,7 +23503,7 @@ var NPC_DIALOG = {
     opening: "Time is the only resource you never get back. I keep the archives so you do not relive a wasted hour.",
     lore: [
       "Every quest you complete is etched here. Open the Journal with J and you will see my work.",
-      "The cron jobs in Hermes Workspace are also mine. I run on heartbeat."
+      "The cron jobs in HermesChi are also mine. I run on heartbeat."
     ],
     choices: [
       {
@@ -23527,7 +23527,7 @@ var NPC_DIALOG = {
     color: "#9ca3af",
     opening: "I track lost agents. In the Grove they hide between branches. Stay quiet and you will hear them.",
     lore: [
-      "When you run a long agent task in Hermes Workspace, it walks somewhere. I find it when it forgets to come home.",
+      "When you run a long agent task in HermesChi, it walks somewhere. I find it when it forgets to come home.",
       "Mini-map is coming. I will mark every agent on it."
     ],
     choices: [
@@ -25585,7 +25585,7 @@ function PlaygroundSidePanel({
         style: { boxShadow: `0 0 18px ${worldAccent}33, 0 12px 36px rgba(0,0,0,.6)` },
         children: [
           /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "flex items-center justify-between border-b border-white/10 px-3 py-2 md:hidden", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "text-[10px] font-bold uppercase tracking-[0.18em] text-white/55", children: "HermesWorld Menu" }),
+            /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "text-[10px] font-bold uppercase tracking-[0.18em] text-white/55", children: "HermesChiWorld Menu" }),
             /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
               "button",
               {
@@ -90583,7 +90583,7 @@ function candidateUrls(avatar) {
   const id = (avatar || "villager-common").trim();
   const safe = id.replace(/[^a-z0-9_-]+/gi, "") || "villager-common";
   return [
-    `/assets/hermesworld/characters/${safe}.glb`,
+    `/assets/hermeschiworld/characters/${safe}.glb`,
     `/avatars-3d/${safe}.glb`
   ];
 }
@@ -95339,7 +95339,7 @@ function TitleScreen({
                       children: [
                         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { style: { color: "#facc15" }, children: "\u2726" }),
                         "Hermes Agent Realm",
-                        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "opacity-60", children: "\xB7 HermesWorld \xD7 Hermes" })
+                        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "opacity-60", children: "\xB7 HermesChiWorld \xD7 Hermes" })
                       ]
                     }
                   ),
@@ -95356,7 +95356,7 @@ function TitleScreen({
                         fontFamily: 'Cinzel, "Trajan Pro", "Cormorant Garamond", "Playfair Display", Georgia, serif',
                         letterSpacing: "0.04em"
                       },
-                      children: "HermesWorld"
+                      children: "HermesChiWorld"
                     }
                   ),
                   /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(
@@ -95507,12 +95507,12 @@ function TitleStars() {
         style: {
           background: "radial-gradient(1px 1px at 20% 30%, white 50%, transparent), radial-gradient(1px 1px at 70% 60%, white 50%, transparent), radial-gradient(1px 1px at 40% 80%, rgba(245,217,122,0.7) 50%, transparent), radial-gradient(2px 2px at 85% 15%, rgba(34,211,238,0.6) 50%, transparent), radial-gradient(1px 1px at 10% 75%, white 50%, transparent), radial-gradient(1.5px 1.5px at 55% 25%, rgba(168,85,247,0.5) 50%, transparent)",
           backgroundSize: "600px 600px",
-          animation: "hermesworld-stars 90s linear infinite"
+          animation: "hermeschiworld-stars 90s linear infinite"
         }
       }
     ),
     /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("style", { children: `
-        @keyframes hermesworld-stars {
+        @keyframes hermeschiworld-stars {
           0% { transform: translate(0, 0); }
           100% { transform: translate(-600px, -300px); }
         }
@@ -95806,7 +95806,7 @@ function PlaygroundUtilityDock({
       const dataUrl = canvas.toDataURL("image/png");
       const a2 = document.createElement("a");
       a2.href = dataUrl;
-      a2.download = `hermesworld-${(/* @__PURE__ */ new Date()).toISOString().replace(/[:.]/g, "-")}.png`;
+      a2.download = `hermeschiworld-${(/* @__PURE__ */ new Date()).toISOString().replace(/[:.]/g, "-")}.png`;
       a2.click();
     } catch {
     }
@@ -95895,7 +95895,7 @@ function PlaygroundUtilityDock({
 }
 function RouteFallback() {
   return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "flex min-h-screen items-center justify-center bg-[#050b12] p-6 text-white", children: /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "max-w-[520px] rounded-3xl border border-amber-300/25 bg-[#070b14] p-5 shadow-2xl", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "text-[10px] font-bold uppercase tracking-[0.22em] text-amber-200/80", children: "HermesWorld" }),
+    /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "text-[10px] font-bold uppercase tracking-[0.22em] text-amber-200/80", children: "HermesChiWorld" }),
     /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "mt-1 text-xl font-extrabold", children: "Route fallback active" }),
     /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("p", { className: "mt-3 text-sm text-white/75", children: "The 3D route failed to render in this browser context. Reload the page or open `/agora` for the lightweight fallback." })
   ] }) });
@@ -95911,7 +95911,7 @@ try {
 }
 function PlayStandalone() {
   import_react24.default.useEffect(() => {
-    document.title = "Play HermesWorld";
+    document.title = "Play HermesChiWorld";
   }, []);
   return /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(PlaygroundScreen, {});
 }

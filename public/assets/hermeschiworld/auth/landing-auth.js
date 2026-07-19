@@ -3,7 +3,7 @@ import {
   getCurrentProfile,
   getDestination,
   signOut,
-} from '/assets/hermesworld/auth/supabase-client.js?v=20260606sso';
+} from '/assets/hermeschiworld/auth/supabase-client.js?v=20260606sso';
 
 const SIGNIN_URL = '/signin/';
 const ACCOUNT_URL = '/account';
@@ -287,7 +287,7 @@ async function routeSignedInUser() {
     if (profile?.username) {
       setFeedback(`Signed in as ${profile.username}.`, 'success');
     } else {
-      setFeedback('Signed in. One more step: reserve your HermesWorld name.', 'success');
+      setFeedback('Signed in. One more step: reserve your HermesChiWorld name.', 'success');
     }
     return true;
   } catch (error) {

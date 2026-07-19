@@ -3,7 +3,7 @@
 // Returns { username, gamePassword } that the WebGL/Win launcher can use.
 //
 // 2026-06-06: consolidated onto our ops (VPS). Provisioning now writes the LIVE game DB
-// directly on the VPS (play.hermes-world.ai/play/web/provision), not the old
+// directly on the VPS (play.hermeschiworld.ir/play/web/provision), not the old
 // Mac-Studio->PC1 bridge. Defaults below keep this working even if the CF dashboard
 // env vars still point at the old bridge.
 
@@ -15,7 +15,7 @@ export interface Env {
 }
 
 // VPS-local provision endpoint base (path /provision is appended below).
-const DEFAULT_BRIDGE_URL = 'https://play.hermes-world.ai/play/web';
+const DEFAULT_BRIDGE_URL = 'https://play.hermeschiworld.ir/play/web';
 const DEFAULT_BRIDGE_SHARED = '2db20ce0d15715ed2c61bbe567410d357e264eba17bddb21';
 
 const normalizeUsername = (value: string) =>
@@ -154,7 +154,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
 
     // Force VPS endpoint unless an env override explicitly points elsewhere and is NOT the retired Studio bridge.
     let bridgeBase = env.BRIDGE_URL || DEFAULT_BRIDGE_URL;
-    if (bridgeBase.includes('bridge.hermes-world.ai')) bridgeBase = DEFAULT_BRIDGE_URL; // retire old Studio->PC1 bridge
+    if (bridgeBase.includes('bridge.hermeschiworld.ir')) bridgeBase = DEFAULT_BRIDGE_URL; // retire old Studio->PC1 bridge
     const sharedSecret = env.BRIDGE_SHARED_SECRET || DEFAULT_BRIDGE_SHARED;
     const provision = () => fetch(`${bridgeBase}/provision`, {
       method: 'POST',

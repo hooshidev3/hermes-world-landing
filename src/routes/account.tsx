@@ -9,8 +9,8 @@ import { type Profile, supabase } from "@/lib/supabase";
 export const Route = createFileRoute("/account")({
   head: () => ({
     meta: [
-      { title: "Account — HermesWorld" },
-      { name: "description", content: "Manage your HermesWorld profile and Founder Vault access." },
+      { title: "Account — HermesChiWorld" },
+      { name: "description", content: "Manage your HermesChiWorld profile and Founder Vault access." },
     ],
   }),
   component: AccountRoute,
@@ -77,7 +77,7 @@ function AccountPanel() {
   }
 
   const displayName =
-    profile?.display_name || user?.user_metadata?.full_name || "HermesWorld Adventurer";
+    profile?.display_name || user?.user_metadata?.full_name || "HermesChiWorld Adventurer";
   const username = profile?.username ? `@${profile.username}` : "Username not set";
 
   return (
@@ -88,7 +88,7 @@ function AccountPanel() {
             to="/"
             className="text-xs font-bold uppercase tracking-[0.25em] text-gold/75 hover:text-gold"
           >
-            HermesWorld
+            HermesChiWorld
           </Link>
           <button
             type="button"

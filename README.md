@@ -1,16 +1,16 @@
-# hermes-world.ai Landing
+# hermeschiworld.ir Landing
 
-Lovable-exported landing page for **HermesWorld** — the Agentic MMO.
+Lovable-exported landing page for **HermesChiWorld** — the Agentic MMO.
 
-Live: <https://hermes-world.ai>
+Live: <https://hermeschiworld.ir>
 
 ## What this repo is
 
-This repo contains the marketing landing page for HermesWorld. The current implementation is a Lovable export built with TanStack Start, React 19, Vite, Tailwind CSS v4, and shadcn/Radix components.
+This repo contains the marketing landing page for HermesChiWorld. The current implementation is a Lovable export built with TanStack Start, React 19, Vite, Tailwind CSS v4, and shadcn/Radix components.
 
 The landing-page CTAs point users to the live playable world at:
 
-- <https://hermes-world.ai/play/>
+- <https://hermeschiworld.ir/play/>
 
 ## Stack
 
@@ -57,12 +57,12 @@ npm run build
 
 ## Cloudflare preview flow
 
-The upstream repo is connected to Cloudflare Pages. Open changes as a PR against `outsourc-e/hermes-world-landing:main`; Cloudflare should attach a preview deployment to the PR for review before merge.
+The upstream repo is connected to Cloudflare Pages. Open changes as a PR against `borhandarabi/hermeschi-world-landing:main`; Cloudflare should attach a preview deployment to the PR for review before merge.
 
 Do not push directly to `main`.
 
 ## Notes for collaborators
 
-- This repo is landing-only. The playable world remains behind the `https://hermes-world.ai/play/` CTA.
+- This repo is landing-only. The playable world remains behind the `https://hermeschiworld.ir/play/` CTA.
 - Keep private keys, tokens, and environment-specific secrets out of the repo.
 - If deployment settings need adjustment, make them part of PR review rather than bypassing the protected `main` flow.

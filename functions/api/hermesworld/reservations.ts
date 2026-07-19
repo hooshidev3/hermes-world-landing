@@ -1,6 +1,6 @@
-// Cloudflare Pages Function: HermesWorld name reservations
-// GET  /api/hermesworld/reservations           → { ok, count }
-// POST /api/hermesworld/reservations           → { ok, reservation: { desiredName, normalizedName, confirmationToken } }
+// Cloudflare Pages Function: HermesChiWorld name reservations
+// GET  /api/hermeschiworld/reservations           → { ok, count }
+// POST /api/hermeschiworld/reservations           → { ok, reservation: { desiredName, normalizedName, confirmationToken } }
 
 interface Env {
   HERMESWORLD_SUPABASE_URL: string

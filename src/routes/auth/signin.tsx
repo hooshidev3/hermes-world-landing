@@ -7,10 +7,10 @@ import { isSupabaseConfigured, supabase } from "@/lib/supabase";
 export const Route = createFileRoute("/auth/signin")({
   head: () => ({
     meta: [
-      { title: "Sign In — HermesWorld" },
+      { title: "Sign In — HermesChiWorld" },
       {
         name: "description",
-        content: "Sign in to HermesWorld with Google OAuth or an email magic link.",
+        content: "Sign in to HermesChiWorld with Google OAuth or an email magic link.",
       },
     ],
   }),
@@ -55,7 +55,7 @@ function SignInRoute() {
       },
     });
 
-    setStatus(error ? error.message : "Magic link sent. Check your inbox to enter HermesWorld.");
+    setStatus(error ? error.message : "Magic link sent. Check your inbox to enter HermesChiWorld.");
     setSubmitting(false);
   }
 
@@ -71,7 +71,7 @@ function SignInRoute() {
               to="/"
               className="text-xs font-bold uppercase tracking-[0.25em] text-gold/75 hover:text-gold"
             >
-              HermesWorld
+              HermesChiWorld
             </Link>
             <h1 className="mt-10 font-display text-5xl leading-tight text-gold md:text-6xl">
               Claim your place in the world.

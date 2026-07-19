@@ -4,6 +4,7 @@ import { LogOut, Play, UserRound } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { supabase } from "@/lib/supabase";
+import { LanguageToggle } from "./LanguageToggle";
 
 const links = [
   { label: "World", href: "#world" },
@@ -51,8 +52,8 @@ export function Nav() {
           <div className="relative">
             <div className="absolute inset-0 rounded-full bg-gold/40 blur-2xl opacity-80 group-hover:opacity-100 transition-opacity" />
             <img
-              src="/assets/hermesworld/art/hermesworld-crest.png"
-              alt="HermesWorld"
+              src="/assets/hermeschiworld/art/hermeschiworld-crest.png"
+              alt="HermesChiWorld"
               width={48}
               height={48}
               className="relative h-11 w-11 lg:h-12 lg:w-12 rounded-full object-cover ring-1 ring-gold/40 drop-shadow-[0_0_18px_rgba(241,197,109,0.55)]"
@@ -63,7 +64,7 @@ export function Nav() {
               className="font-display font-bold tracking-tight text-[22px] lg:text-[26px] bg-gradient-to-b from-[#FFFBE9] via-[#F5D97A] to-[#C89C2A] bg-clip-text text-transparent"
               style={{ letterSpacing: "0.01em" }}
             >
-              HermesWorld
+              HermesChiWorld
             </span>
             <span className="text-[9px] lg:text-[10px] uppercase tracking-[0.28em] text-gold/70 font-body font-bold mt-1.5">
               Persistent Agent RPG
@@ -80,6 +81,7 @@ export function Nav() {
         </nav>
 
         <div className="ml-auto flex items-center gap-2 flex-none">
+          <LanguageToggle />
           {session ? (
             <div className="group relative">
               <button
@@ -121,7 +123,7 @@ export function Nav() {
             </Link>
           )}
           <a
-            href="https://hermes-world.ai/play/"
+            href="https://hermeschiworld.ir/play/"
             className="hidden md:inline-flex items-center gap-1.5 text-[10px] lg:text-[11px] uppercase tracking-[0.1em] font-body font-bold px-3 lg:px-5 py-2 lg:py-2.5 rounded-md border border-gold bg-gradient-to-r from-[#F6D98A] via-[#E8B85C] to-[#B68A4A] text-obsidian hover:brightness-110 transition-all whitespace-nowrap shadow-[0_4px_16px_-4px_rgba(241,196,109,0.5)]"
           >
             <Diamond /> Enter the World <Diamond />

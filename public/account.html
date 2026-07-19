@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>Account — HermesWorld</title>
+<title>Account — HermesChiWorld</title>
 <meta name="theme-color" content="#03080c" />
-<link rel="icon" href="/assets/hermesworld/art/hermesworld-crest.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/hermesworld/art/hermesworld-crest.png" />
+<link rel="icon" href="/assets/hermeschiworld/art/hermeschiworld-crest.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/hermeschiworld/art/hermeschiworld-crest.png" />
 <style>
 :root{--bg:#03080c;--panel:#071318;--panel2:#0b1820;--gold:#f4c66d;--gold2:#b97825;--gold3:#ffe5a8;--cyan:#78f0ff;--text:#fff4dc;--muted:#aab9b2;--danger:#ff8d73;--success:#7dffad;--line:rgba(244,198,109,.24)}
 *{box-sizing:border-box}
@@ -19,9 +19,9 @@ a{color:inherit}.wrap{max-width:920px;margin:0 auto;padding-top:32px}.topbar{dis
 <body>
 <div class="wrap">
   <div class="topbar">
-    <a class="brand" href="/"><img src="/assets/hermesworld/art/hermesworld-crest.png" alt="HermesWorld"><div class="brand-name"><b>Hermes</b><span>World</span></div></a>
+    <a class="brand" href="/"><img src="/assets/hermeschiworld/art/hermeschiworld-crest.png" alt="HermesChiWorld"><div class="brand-name"><b>Hermes</b><span>World</span></div></a>
     <div class="top-actions">
-      <a class="small-link" href="https://play.hermes-world.ai/play/web/">Play</a>
+      <a class="small-link" href="https://play.hermeschiworld.ir/play/web/">Play</a>
       <a class="small-link" href="/">Landing</a>
       <button class="signout" id="signout">Sign out</button>
     </div>
@@ -42,7 +42,7 @@ a{color:inherit}.wrap{max-width:920px;margin:0 auto;padding-top:32px}.topbar{dis
     getCurrentProfile,
     normalizeUsername,
     signOut,
-  } from '/assets/hermesworld/auth/supabase-client.js?v=20260606sso';
+  } from '/assets/hermeschiworld/auth/supabase-client.js?v=20260606sso';
 
   const contentEl = document.getElementById('content');
   const signoutBtn = document.getElementById('signout');
@@ -133,7 +133,7 @@ a{color:inherit}.wrap{max-width:920px;margin:0 auto;padding-top:32px}.topbar{dis
               <div class="field">
                 <label class="label" for="display_name">Display name</label>
                 <input class="input" id="display_name" name="display_name" value="${escapeHtml(displayName)}" maxlength="80" autocomplete="name">
-                <div class="hint">Shown on your HermesWorld account page.</div>
+                <div class="hint">Shown on your HermesChiWorld account page.</div>
               </div>
               <div class="field">
                 <label class="label" for="username">Username</label>
@@ -179,7 +179,7 @@ a{color:inherit}.wrap{max-width:920px;margin:0 auto;padding-top:32px}.topbar{dis
             ${isFounder ? '' : '<a class="btn" style="margin-top:12px" href="/#verify">Verify wallet</a>'}
           </div>
           <div class="actions">
-            <a class="btn primary" href="https://play.hermes-world.ai/play/web/">Enter HermesWorld →</a>
+            <a class="btn primary" href="https://play.hermeschiworld.ir/play/web/">Enter HermesChiWorld →</a>
             ${!username ? '<a class="btn" href="/reserve">Claim founder name</a>' : ''}
             <button class="btn" id="secondary-signout" type="button">Sign out</button>
           </div>

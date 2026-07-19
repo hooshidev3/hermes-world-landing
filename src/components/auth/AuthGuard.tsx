@@ -63,7 +63,7 @@ function AuthRequired() {
         </div>
         <h1 className="font-display text-4xl text-gold">Sign in required</h1>
         <p className="mt-3 text-sm leading-6 text-parchment/70">
-          Your account page and Founder Vault claims unlock after HermesWorld auth is enabled.
+          Your account page and Founder Vault claims unlock after HermesChiWorld auth is enabled.
         </p>
         <Link
           to="/auth/signin"

@@ -1,4 +1,4 @@
-// Decorative animated orbs for the HermesWorld hero.
+// Decorative animated orbs for the HermesChiWorld hero.
 // Pure CSS — three layered gradient discs, slow counter-rotating, gold/cyan glow.
 
 export function SpinningOrbs() {

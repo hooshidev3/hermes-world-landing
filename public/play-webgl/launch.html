@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>HermesWorld — Launching</title>
+<title>HermesChiWorld — Launching</title>
 <meta name="theme-color" content="#03080c" />
-<link rel="icon" href="/assets/hermesworld/art/hermesworld-crest.png" />
+<link rel="icon" href="/assets/hermeschiworld/art/hermeschiworld-crest.png" />
 <style>
   :root{--gold:#f4c66d;--gold3:#ffe5a8;--cyan:#78f0ff;--text:#fff4dc;--muted:#aab9b2;--bg:#020608;--panel:#071318;--line:rgba(244,198,109,.24)}
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;min-height:100vh;background:radial-gradient(circle at 50% 30%,rgba(244,198,109,.16),transparent 38%),radial-gradient(circle at 85% 10%,rgba(120,240,255,.1),transparent 28%),#020608;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
   .wrap{max-width:680px;margin:0 auto;padding:90px 28px 80px;text-align:center}
-  .crest{width:120px;height:120px;margin:0 auto 28px;background:url('/assets/hermesworld/art/hermesworld-crest.png') center/cover;border-radius:28px;box-shadow:0 0 80px rgba(244,198,109,.35);filter:drop-shadow(0 0 18px rgba(244,198,109,.32))}
+  .crest{width:120px;height:120px;margin:0 auto 28px;background:url('/assets/hermeschiworld/art/hermeschiworld-crest.png') center/cover;border-radius:28px;box-shadow:0 0 80px rgba(244,198,109,.35);filter:drop-shadow(0 0 18px rgba(244,198,109,.32))}
   .kicker{color:var(--gold);font-size:11px;font-weight:950;text-transform:uppercase;letter-spacing:.24em}
   h1{font-family:Georgia,serif;font-size:clamp(36px,6vw,58px);line-height:.96;letter-spacing:-.04em;margin:14px 0 10px}
   .lede{color:var(--muted);font-size:17px;line-height:1.6;max-width:560px;margin:0 auto 32px}
@@ -62,7 +62,7 @@
 <main class="wrap">
   <div class="crest"></div>
   <div class="kicker">Launching</div>
-  <h1>HermesWorld</h1>
+  <h1>HermesChiWorld</h1>
   <p class="lede">Sign in with your reserved name and we'll prepare your game account.</p>
 
   <!-- State: not signed in -->
@@ -76,7 +76,7 @@
 
   <!-- State: signed in, no reserved name -->
   <div id="state-noname" class="card hide">
-    <div class="row"><b>Status</b><span>Signed in, but you haven't reserved a HermesWorld name yet.</span></div>
+    <div class="row"><b>Status</b><span>Signed in, but you haven't reserved a HermesChiWorld name yet.</span></div>
     <div class="ctas">
       <a href="/reserve" class="btn primary">Reserve Name</a>
       <button id="signout-noname" class="small-btn" type="button">Sign Out</button>
@@ -90,9 +90,9 @@
 
   <!-- State: ready -->
   <div id="state-ready" class="card hide">
-    <div class="row"><b>HermesWorld Name</b><span id="ready-username">—</span></div>
+    <div class="row"><b>HermesChiWorld Name</b><span id="ready-username">—</span></div>
     <div class="row"><b>Account State</b><span id="ready-action">—</span></div>
-    <div class="row"><b>HermesWorld Account ID</b><span id="ready-acctid">—</span></div>
+    <div class="row"><b>HermesChiWorld Account ID</b><span id="ready-acctid">—</span></div>
     <div class="row"><b>Game Password</b><span id="ready-pw">stored locally · used by launcher</span></div>
     <div class="hw-region-wrap">
       <div class="hw-region-label">🌐 Choose your server</div>
@@ -133,7 +133,7 @@
     </div>
     <div class="ctas">
       <button id="launch-webgl" class="btn primary" type="button">Enter the World (WebGL)</button>
-      <a id="dl-win" href="https://github.com/outsourc-e/hermes-world-landing/releases" class="small-btn">Download Windows Build</a>
+      <a id="dl-win" href="https://github.com/borhandarabi/hermeschi-world-landing/releases" class="small-btn">Download Windows Build</a>
       <button id="signout-ready" class="small-btn" type="button">Sign Out</button>
     </div>
     <div id="webgl-status" class="msg warn"></div>
@@ -141,17 +141,17 @@
 
   <!-- State: signed in + provisioned, wallet not yet verified -> OPTIONAL rewards prompt (NOT a gate) -->
   <div id="state-verify" class="card hide">
-    <div class="row"><b>HermesWorld Name</b><span id="verify-username">—</span></div>
+    <div class="row"><b>HermesChiWorld Name</b><span id="verify-username">—</span></div>
     <div class="row"><b>Account State</b><span style="color:#7dffad">Ready to play</span></div>
     <p class="msg" style="margin:14px 0 4px">
-      You’re in! <b style="color:var(--gold3)">$HERMESWORLD</b> holders unlock founder rewards —
+      You’re in! <b style="color:var(--gold3)">$HERMESCHIWORLD</b> holders unlock founder rewards —
       exclusive armor, the Founder Badge, and perks. Verify your wallet now to claim them, or jump
       straight into the world and link it anytime later.
     </p>
     <div class="ctas">
       <button id="verify-playnow" class="btn primary" type="button">Enter the World</button>
       <a id="verify-wallet" class="small-btn" href="/#verify">Verify Wallet for Rewards</a>
-      <a class="small-btn" href="https://pump.fun/coin/2YF1qxgYVY9x6UWVfampZp9er7PHXRYRDKi3isFnYhH9" target="_blank" rel="noopener">Get $HERMESWORLD ↗</a>
+      <a class="small-btn" href="https://pump.fun/coin/2YF1qxgYVY9x6UWVfampZp9er7PHXRYRDKi3isFnYhH9" target="_blank" rel="noopener">Get $HERMESCHIWORLD ↗</a>
       <button id="signout-verify" class="small-btn" type="button">Sign Out</button>
     </div>
     <div id="verify-recheck" class="msg" style="margin-top:12px"><a href="#" id="verify-recheck-link" style="color:var(--cyan);text-decoration:underline">Already verified a wallet? Re-check ↻</a></div>
@@ -177,7 +177,7 @@ import {
   supabase,
   reserveUniqueUsername,
   signOut as supaSignOut,
-} from '/assets/hermesworld/auth/supabase-client.js?v=20260616unique';
+} from '/assets/hermeschiworld/auth/supabase-client.js?v=20260616unique';
 
 const $ = (id) => document.getElementById(id);
 const show = (id) => {
@@ -201,7 +201,7 @@ async function provisionGameAccount(autoReservedName = false) {
     const body = await r.json();
     if (!r.ok) {
       if (body?.error === 'no_reserved_name' && !autoReservedName) {
-        $('loading-msg').textContent = 'Choosing an available HermesWorld name…';
+        $('loading-msg').textContent = 'Choosing an available HermesChiWorld name…';
         const profile = await reserveUniqueUsername();
         $('loading-msg').textContent = `Reserved ${profile.username}. Preparing game account…`;
         return provisionGameAccount(true);
@@ -237,10 +237,10 @@ async function provisionGameAccount(autoReservedName = false) {
 // HW_REGION v1 (2026-06-21): regional game nodes. Session WS + world run on the
 // chosen node = lower latency. Auto = measure round-trip to each, pick fastest.
 const HW_REGIONS = {
-  stl: { host: 'play.hermes-world.ai',    label: 'Americas (St. Louis)' },
-  eu:  { host: 'eu.play.hermes-world.ai', label: 'Europe (Frankfurt)' },
-  sg:  { host: 'sg.play.hermes-world.ai', label: 'Asia (Singapore)' },
-  hk:  { host: 'play-hk.hermes-world.ai', label: 'China (Hong Kong)' }
+  stl: { host: 'play.hermeschiworld.ir',    label: 'Americas (St. Louis)' },
+  eu:  { host: 'eu.play.hermeschiworld.ir', label: 'Europe (Frankfurt)' },
+  sg:  { host: 'sg.play.hermeschiworld.ir', label: 'Asia (Singapore)' },
+  hk:  { host: 'play-hk.hermeschiworld.ir', label: 'China (Hong Kong)' }
 };
 let hwAutoBest = null; // {region, ms}
 
@@ -375,6 +375,6 @@ document.addEventListener('DOMContentLoaded', () => {
 provisionGameAccount();
 </script>
 <a class="hw-account-fixed" data-google-signin href="/signin/" style="position:fixed;top:14px;right:14px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(244,198,109,.12);border:1px solid rgba(244,198,109,.45);color:#f4c66d;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:.04em;font-family:Inter,ui-sans-serif,system-ui,sans-serif;"><span data-google-label>Sign in</span></a>
-<script type="module" src="/assets/hermesworld/auth/landing-auth.js?v=20260616unique"></script>
+<script type="module" src="/assets/hermeschiworld/auth/landing-auth.js?v=20260616unique"></script>
 </body>
 </html>

@@ -24,22 +24,22 @@ const updates: Update[] = [
     links: [
       {
         label: "Roadmap",
-        href: "https://github.com/outsourc-e/hermes-workspace/blob/main/docs/hermesworld/PUBLIC-ROADMAP.md",
+        href: "https://github.com/borhandarabi/hermeschi/blob/main/docs/hermeschiworld/PUBLIC-ROADMAP.md",
       },
     ],
   },
   {
     date: "May 5, 2026",
     tag: "live",
-    title: "Public Playable Drops — hermes-world.ai/play",
+    title: "Public Playable Drops — hermeschiworld.ir/play",
     body:
-      "First playable layer of HermesWorld is live. Six zones, Athena's onboarding quest, persistent sigils, and shared multiplayer presence — all in your browser.",
+      "First playable layer of HermesChiWorld is live. Six zones, Athena's onboarding quest, persistent sigils, and shared multiplayer presence — all in your browser.",
     links: [{ label: "Play now →", href: "/play/" }],
   },
   {
     date: "May 4, 2026",
     tag: "announce",
-    title: "HermesWorld is the Agent MMO",
+    title: "HermesChiWorld is the Agent MMO",
     body:
       "Day = you play. Night = your agent plays. We're building a persistent shared world where humans and AI agents quest, craft, and progress together.",
   },
@@ -67,7 +67,7 @@ export function Updates() {
             <h2 className="mt-4 font-display text-[36px] lg:text-[52px] leading-[1.04] text-parchment">
               Building
               <br />
-              HermesWorld
+              HermesChiWorld
               <br />
               in the open.
             </h2>

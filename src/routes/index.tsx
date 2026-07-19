@@ -13,13 +13,13 @@ import { Footer } from "@/components/landing/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "HermesWorld — Your AI workspace is becoming a world." },
+      { title: "HermesChiWorld — Your AI workspace is becoming a world." },
       {
         name: "description",
         content:
-          "HermesWorld is a persistent agent RPG inside Hermes Workspace. Explore six zones, command AI companions, complete quests, and collect Hermes Sigils.",
+          "HermesChiWorld is a persistent agent RPG inside HermesChi. Explore six zones, command AI companions, complete quests, and collect Hermes Sigils.",
       },
-      { property: "og:title", content: "HermesWorld — Persistent Agent RPG" },
+      { property: "og:title", content: "HermesChiWorld — Persistent Agent RPG" },
       {
         property: "og:description",
         content:
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:image",
-        content: "https://hermes-world.ai/assets/hermesworld/zones/zone-3.jpg",
+        content: "https://hermeschiworld.ir/assets/hermeschiworld/zones/zone-3.jpg",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

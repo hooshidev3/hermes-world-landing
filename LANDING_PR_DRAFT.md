@@ -4,15 +4,15 @@ Suggested PR title: `[V1.0] /play-webgl coming-soon + Windows build link`
 
 ## Audit summary
 
-- Landing repo found at `/Users/aurora/hermes-world-landing-repo`.
-- Git remote: `https://github.com/outsourc-e/hermes-world-landing.git`.
+- Landing repo found at `/Users/aurora/hermeschi-world-landing-repo`.
+- Git remote: `https://github.com/borhandarabi/hermeschi-world-landing.git`.
 - Current branch during audit: `feat/name-reservations`.
 - `/play-webgl/index.html` is the active coming-soon / V1 shipping page.
   - File mtime: May 20 02:39:43 2026, matching Aurora's 02:39 EDT promotion note.
-  - Page title: `HermesWorld - Coming Soon`.
-  - Player-facing CTA currently points to `https://github.com/outsourc-e/hermes-world-landing/releases`.
+  - Page title: `HermesChiWorld - Coming Soon`.
+  - Player-facing CTA currently points to `https://github.com/borhandarabi/hermeschi-world-landing/releases`.
 - `/play-webgl/index.unity-loader.html` is preserved as the Unity WebGL loader page.
-  - It still references `Build/HermesWorld.loader.js`, `.data.gz`, `.framework.js.gz`, `.wasm.gz`, and `StreamingAssets`.
+  - It still references `Build/HermesChiWorld.loader.js`, `.data.gz`, `.framework.js.gz`, `.wasm.gz`, and `StreamingAssets`.
   - The `Build/` and `StreamingAssets/` directories exist but are currently empty in this working tree.
 - `/play/index.html` is still in place as the free browser/Three.js demo entrypoint.
   - It loads `/assets/play-standalone.js`.
@@ -32,12 +32,12 @@ Suggested PR title: `[V1.0] /play-webgl coming-soon + Windows build link`
 
 - TODO: upload zipped Windows build artifact from `latest/`.
 - Once uploaded, replace the current generic GitHub releases CTA in `public/play-webgl/index.html` line 48:
-  - Current: `https://github.com/outsourc-e/hermes-world-landing/releases`
+  - Current: `https://github.com/borhandarabi/hermeschi-world-landing/releases`
   - Target: direct URL to the uploaded `latest/` Windows zip artifact, or the canonical release asset URL if GitHub Releases remains the distribution channel.
 
 ## Validation performed
 
-- Located repo candidates under `/Users/aurora` and selected `/Users/aurora/hermes-world-landing-repo` because it has remote `outsourc-e/hermes-world-landing` and contains `public/play-webgl` plus `public/play`.
+- Located repo candidates under `/Users/aurora` and selected `/Users/aurora/hermeschi-world-landing-repo` because it has remote `borhandarabi/hermeschi-world-landing` and contains `public/play-webgl` plus `public/play`.
 - Read `public/play-webgl/index.html` and confirmed coming-soon content.
 - Read `public/play-webgl/index.unity-loader.html` and confirmed Unity loader is preserved.
 - Read `public/play/index.html` and confirmed free browser demo entrypoint remains.

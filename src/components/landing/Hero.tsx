@@ -4,7 +4,7 @@ import heroKeyArt from "../../assets/hero-keyart.jpg";
 export function Hero() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
-  // Direct port of the canvas spinning-orbs animation from hermes-world.ai
+  // Direct port of the canvas spinning-orbs animation from hermeschiworld.ir
   useEffect(() => {
     if (
       window.matchMedia &&
@@ -278,7 +278,7 @@ export function Hero() {
             margin: "24px 0 12px",
           }}
         >
-          HermesWorld
+          HermesChiWorld
         </h1>
 
         <div

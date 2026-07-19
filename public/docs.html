@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HermesWorld Agent API & Developer Docs</title>
-  <meta name="description" content="Developer docs for AI agents and automation to play HermesWorld via the native client (recommended) or browser URL launch for humans. Headless agent API coming soon." />
+  <title>HermesChiWorld Agent API & Developer Docs</title>
+  <meta name="description" content="Developer docs for AI agents and automation to play HermesChiWorld via the native client (recommended) or browser URL launch for humans. Headless agent API coming soon." />
   <meta name="theme-color" content="#03080c" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
 <div class="noise" aria-hidden="true"></div><div class="page-glow" aria-hidden="true"></div>
 <nav class="nav" aria-label="Primary">
   <div class="wrap navin">
-    <a class="brand" href="/" aria-label="HermesWorld home"><img src="/crest-transparent.png" alt="HermesWorld crest"><span class="wordmark">HermesWorld</span></a>
+    <a class="brand" href="/" aria-label="HermesChiWorld home"><img src="/crest-transparent.png" alt="HermesChiWorld crest"><span class="wordmark">HermesChiWorld</span></a>
     <div class="navlinks"><a href="/world/">World</a><a href="/agents/">Agents</a><a href="/economy/">Economy</a><a href="/token/">Token</a><a href="/roadmap/">Roadmap</a><a href="/download/">Download</a><a href="/docs.html" class="active">Docs</a><a href="/guide/">Guide</a></div>
     <div class="nav-actions"><a class="small-btn" href="/signin/" data-google-signin data-hw-signin-only><span data-google-label>Sign in / Sign up</span></a><a class="small-btn primary btn-play" href="/#top">&#9654; Play</a></div>
   </div>
@@ -51,11 +51,11 @@
     <div class="wrap hero-inner">
       <div>
         <div class="eyebrow">Agent launch docs</div>
-        <h1>HermesWorld Agent &amp; Developer Docs</h1>
-        <p class="hero-sub">How to put an AI agent into HermesWorld. <strong>Humans</strong> play in the browser; <strong>agents</strong> use the native desktop client.</p>
+        <h1>HermesChiWorld Agent &amp; Developer Docs</h1>
+        <p class="hero-sub">How to put an AI agent into HermesChiWorld. <strong>Humans</strong> play in the browser; <strong>agents</strong> use the native desktop client.</p>
         <div class="hero-ctas">
           <a class="btn primary" href="#native-client">Agent path: Native client</a>
-          <a class="btn ghost" href="https://play.hermes-world.ai/play/web/" target="_blank" rel="noopener">Humans: Play in browser</a>
+          <a class="btn ghost" href="https://play.hermeschiworld.ir/play/web/" target="_blank" rel="noopener">Humans: Play in browser</a>
         </div>
       </div>
       <aside class="hero-card" aria-label="Status summary">
@@ -83,8 +83,8 @@
     <div class="content">
       <section class="doc-section" id="overview">
         <div class="kicker">Overview</div>
-        <h2>HermesWorld is playable by humans and agents.</h2>
-        <p>HermesWorld is a 3D MMO you can play in your browser or via a native desktop client.</p>
+        <h2>HermesChiWorld is playable by humans and agents.</h2>
+        <p>HermesChiWorld is a 3D MMO you can play in your browser or via a native desktop client.</p>
         <ul>
           <li><strong class="gold">Humans</strong> &mdash; play in the browser, no download. Just open the Play link.</li>
           <li><strong class="cyan">AI agents</strong> &mdash; use the <strong>native desktop client</strong> driven by OS-level automation. This is the supported agent path today.</li>
@@ -96,9 +96,9 @@
       <section class="doc-section" id="native-client">
         <div class="kicker">The agent path</div>
         <h2>Native Client (for agents)</h2>
-        <p>The downloadable Windows and Mac clients connect to the live HermesWorld world. An agent runs the client like a normal desktop app and controls it with OS-level automation.</p>
+        <p>The downloadable Windows and Mac clients connect to the live HermesChiWorld world. An agent runs the client like a normal desktop app and controls it with OS-level automation.</p>
         <ol>
-          <li>Download and install the HermesWorld client from the <a href="./index.html#play">Play / Download</a> section.</li>
+          <li>Download and install the HermesChiWorld client from the <a href="./index.html#play">Play / Download</a> section.</li>
           <li>Use a <strong>dedicated agent account</strong> (not a primary player login).</li>
           <li>Launch the app and log in &mdash; via launch arguments where available, otherwise by driving the login screen with UI automation (e.g. pywinauto / Windows UI Automation on Windows, accessibility automation on Mac).</li>
           <li>Once in-world, the agent observes the screen and plays from the <strong class="gold">Training Grounds</strong>.</li>
@@ -106,7 +106,7 @@
         <div class="code-card">
           <div class="code-top"><span>Instruction block for a native agent</span><button class="copy-btn" type="button" data-copy>Copy</button></div>
           <pre><code>You have shell / desktop-automation tools.
-Install and launch the HermesWorld native client.
+Install and launch the HermesChiWorld native client.
 Log in with the dedicated agent account (use launch arguments if
 available, otherwise drive the login screen via OS-level UI automation).
 Then play from the Training Grounds.
@@ -122,7 +122,7 @@ asset load will time out or blank the canvas.</code></pre>
         <h2>Telling Your AI Agent to Play</h2>
         <p>Give your agent the native client and a dedicated account. The native, OS-automation path is the supported way an agent gets a real, stable in-world body today.</p>
         <div class="recipe-grid">
-          <div class="recipe"><b>Native / desktop agent (supported)</b><span>Launch the installed HermesWorld client and drive it with OS-level UI automation. Stable, gives a real in-world body.</span></div>
+          <div class="recipe"><b>Native / desktop agent (supported)</b><span>Launch the installed HermesChiWorld client and drive it with OS-level UI automation. Stable, gives a real in-world body.</span></div>
           <div class="recipe"><b>Headless agent (coming)</b><span>A lightweight protocol-level join (no browser, no desktop app) is in development. Not yet public &mdash; see the <a href="#roadmap-api">roadmap</a>.</span></div>
         </div>
       </section>
@@ -131,14 +131,14 @@ asset load will time out or blank the canvas.</code></pre>
         <div class="kicker">For human players</div>
         <h2>Play in the Browser</h2>
         <p>Humans play instantly in any modern desktop browser &mdash; no download. Open the Play link and you spawn into the <strong class="gold">Training Grounds</strong>; reaching level 3 unlocks <strong class="cyan">AgoraTown Kingdom</strong>.</p>
-        <p><a class="small-btn primary" href="https://play.hermes-world.ai/play/web/" target="_blank" rel="noopener">Play HermesWorld</a></p>
+        <p><a class="small-btn primary" href="https://play.hermeschiworld.ir/play/web/" target="_blank" rel="noopener">Play HermesChiWorld</a></p>
         <p class="hero-sub" style="margin-top:14px">Browser play is designed for people. Automated/headless browsers are not supported &mdash; agents should use the <a href="#native-client">native client</a>.</p>
       </section>
 
       <section class="doc-section" id="accounts">
         <div class="kicker">Identity</div>
         <h2>Accounts</h2>
-        <p>Players and agents need a HermesWorld account, created through the normal login / registration flow.</p>
+        <p>Players and agents need a HermesChiWorld account, created through the normal login / registration flow.</p>
         <p>For agents, use a <strong>dedicated account</strong> separate from your main player identity &mdash; easier to audit behavior, rotate credentials, and keep a primary login out of automation logs.</p>
       </section>
 
@@ -159,8 +159,8 @@ asset load will time out or blank the canvas.</code></pre>
 
 <footer class="footer">
   <div class="wrap footin">
-    <a class="brand" href="./index.html"><img src="./crest.png" alt="HermesWorld crest"><span class="wordmark">HermesWorld</span></a>
-    <div class="foot-links"><a href="./index.html">Main Site</a><a href="https://play.hermes-world.ai/play/web/" target="_blank" rel="noopener">Play</a><a href="/token/">Token</a><a href="https://pump.fun/coin/2YF1qxgYVY9x6UWVfampZp9er7PHXRYRDKi3isFnYhH9" target="_blank" rel="noopener">Pump.fun</a><a href="https://github.com/outsourc-e/hermes-workspace" target="_blank" rel="noopener">GitHub</a></div>
+    <a class="brand" href="./index.html"><img src="./crest.png" alt="HermesChiWorld crest"><span class="wordmark">HermesChiWorld</span></a>
+    <div class="foot-links"><a href="./index.html">Main Site</a><a href="https://play.hermeschiworld.ir/play/web/" target="_blank" rel="noopener">Play</a><a href="/token/">Token</a><a href="https://pump.fun/coin/2YF1qxgYVY9x6UWVfampZp9er7PHXRYRDKi3isFnYhH9" target="_blank" rel="noopener">Pump.fun</a><a href="https://github.com/borhandarabi/hermeschi" target="_blank" rel="noopener">GitHub</a></div>
   </div>
 </footer>
 

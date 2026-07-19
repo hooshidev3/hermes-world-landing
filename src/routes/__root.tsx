@@ -29,37 +29,37 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "HermesWorld — The Agent MMO" },
+      { title: "HermesChiWorld — The Agent MMO" },
       {
         name: "description",
         content:
-          "HermesWorld is the persistent agent MMO. Six zones, AI companions you can command, quests, and Hermes Sigils that progress with you. Free to play in your browser.",
+          "HermesChiWorld is the persistent agent MMO. Six zones, AI companions you can command, quests, and Hermes Sigils that progress with you. Free to play in your browser.",
       },
-      { name: "author", content: "HermesWorld" },
+      { name: "author", content: "HermesChiWorld" },
       { name: "theme-color", content: "#020608" },
-      { property: "og:title", content: "HermesWorld — The Agent MMO" },
+      { property: "og:title", content: "HermesChiWorld — The Agent MMO" },
       {
         property: "og:description",
         content:
           "Step into a shared world of Hermes agents. Train, build, and quest with builders worldwide. Free to play. No signup.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://hermes-world.ai" },
-      { property: "og:site_name", content: "HermesWorld" },
+      { property: "og:url", content: "https://hermeschiworld.ir" },
+      { property: "og:site_name", content: "HermesChiWorld" },
       {
         property: "og:image",
-        content: "https://hermes-world.ai/assets/hermesworld/art/social-preview-hermes-5-2-v3.jpg?v=2",
+        content: "https://hermeschiworld.ir/assets/hermeschiworld/art/social-preview-hermes-5-2-v3.jpg?v=2",
       },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       {
         property: "og:image:alt",
-        content: "HermesWorld — Persistent Agent MMO",
+        content: "HermesChiWorld — Persistent Agent MMO",
       },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@outsource_" },
       { name: "twitter:creator", content: "@outsource_" },
-      { name: "twitter:title", content: "HermesWorld — The Agent MMO" },
+      { name: "twitter:title", content: "HermesChiWorld — The Agent MMO" },
       {
         name: "twitter:description",
         content:
@@ -67,7 +67,7 @@ export const Route = createRootRoute({
       },
       {
         name: "twitter:image",
-        content: "https://hermes-world.ai/assets/hermesworld/art/social-preview-hermes-5-2-v3.jpg?v=2",
+        content: "https://hermeschiworld.ir/assets/hermeschiworld/art/social-preview-hermes-5-2-v3.jpg?v=2",
       },
     ],
     links: [
@@ -86,12 +86,38 @@ export const Route = createRootRoute({
 });
 
 function RootShell({ children }: { children: React.ReactNode }) {
+  const bootScript = `
+    (() => {
+      try {
+        const storedLocale = localStorage.getItem('hermeschi-landing-locale');
+        const supportedLocales = ['en', 'fa'];
+        let locale = 'en';
+        if (storedLocale && supportedLocales.indexOf(storedLocale) !== -1) {
+          locale = storedLocale;
+        } else {
+          const navLang = (navigator && navigator.language) || '';
+          if (supportedLocales.indexOf(navLang) !== -1) {
+            locale = navLang;
+          } else {
+            const short = navLang.split('-')[0];
+            if (supportedLocales.indexOf(short) !== -1) locale = short;
+          }
+        }
+        const rtlLocales = ['fa'];
+        const dir = rtlLocales.indexOf(locale) !== -1 ? 'rtl' : 'ltr';
+        document.documentElement.lang = locale;
+        document.documentElement.dir = dir;
+      } catch {}
+    })();
+  `;
+
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr">
       <head>
         <HeadContent />
       </head>
       <body>
+        <script dangerouslySetInnerHTML={{ __html: bootScript }} />
         {children}
         <Scripts />
       </body>

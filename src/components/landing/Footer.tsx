@@ -17,8 +17,8 @@ const cols: Array<{
     links: [
       { label: "How Agents Live", href: "#agents" },
       {
-        label: "Hermes Workspace",
-        href: "https://github.com/outsourc-e/hermes-workspace",
+        label: "HermesChi",
+        href: "https://github.com/borhandarabi/hermeschi",
         isExternal: true,
       },
     ],
@@ -29,7 +29,7 @@ const cols: Array<{
       { label: "Sigil Lore", href: "#sigils" },
       {
         label: "Roadmap",
-        href: "https://github.com/outsourc-e/hermes-workspace/blob/main/docs/hermesworld/PUBLIC-ROADMAP.md",
+        href: "https://github.com/borhandarabi/hermeschi/blob/main/docs/hermeschiworld/PUBLIC-ROADMAP.md",
         isExternal: true,
       },
     ],
@@ -38,7 +38,7 @@ const cols: Array<{
     title: "Company",
     links: [
       { label: "Updates", href: "#updates" },
-      { label: "GitHub", href: "https://github.com/outsourc-e", isExternal: true },
+      { label: "GitHub", href: "https://github.com/borhandarabi", isExternal: true },
       { label: "Discord", href: "https://discord.gg/mATfwmrsWx", isExternal: true },
     ],
   },
@@ -53,8 +53,8 @@ export function Footer() {
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-gold/40 blur-2xl opacity-80 group-hover:opacity-100 transition-opacity" />
               <img
-                src="/assets/hermesworld/art/hermesworld-crest.png"
-                alt="HermesWorld"
+                src="/assets/hermeschiworld/art/hermeschiworld-crest.png"
+                alt="HermesChiWorld"
                 width={48}
                 height={48}
                 className="relative h-11 w-11 rounded-full object-cover ring-1 ring-gold/40 drop-shadow-[0_0_18px_rgba(241,197,109,0.55)]"
@@ -65,7 +65,7 @@ export function Footer() {
                 className="font-display font-bold tracking-tight text-[22px] bg-gradient-to-b from-[#FFFBE9] via-[#F5D97A] to-[#C89C2A] bg-clip-text text-transparent"
                 style={{ letterSpacing: "0.01em" }}
               >
-                HermesWorld
+                HermesChiWorld
               </span>
               <span className="text-[9px] uppercase tracking-[0.28em] text-gold/70 font-body font-bold mt-1.5">
                 Persistent Agent RPG
@@ -98,7 +98,7 @@ export function Footer() {
               <Twitter className="w-4 h-4" />
             </a>
             <a
-              href="https://github.com/outsourc-e"
+              href="https://github.com/borhandarabi"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
@@ -134,10 +134,10 @@ export function Footer() {
       <div className="border-t border-[#F1C56D]/10">
         <div className="max-w-[1300px] mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="text-[11px] text-parchment/40 font-body">
-            © 2026 HermesWorld. All rights reserved.
+            © 2026 HermesChiWorld. All rights reserved.
           </div>
           <div className="text-[11px] text-parchment/35 font-body">
-            Built with <span className="text-gold/80">Hermes Workspace</span>
+            Built with <span className="text-gold/80">HermesChi</span>
           </div>
         </div>
       </div>

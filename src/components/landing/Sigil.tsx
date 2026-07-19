@@ -142,7 +142,7 @@ export function WordmarkHorizontal({
       height={height}
       viewBox="0 0 820 100"
       className={className}
-      aria-label="HermesWorld"
+      aria-label="HermesChiWorld"
     >
       <defs>
         <linearGradient id="wm-gold" x1="0%" y1="0%" x2="0%" y2="100%">

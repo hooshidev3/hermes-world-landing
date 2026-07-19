@@ -4,19 +4,19 @@ import { useEffect, useMemo, useState, type FormEvent } from "react";
 export const Route = createFileRoute("/reserve")({
   head: () => ({
     meta: [
-      { title: "Reserve your HermesWorld name" },
+      { title: "Reserve your HermesChiWorld name" },
       {
         name: "description",
         content:
-          "Claim your HermesWorld username before launch. Founders get exclusive starter gear, sigil drops, and early access.",
+          "Claim your HermesChiWorld username before launch. Founders get exclusive starter gear, sigil drops, and early access.",
       },
-      { property: "og:title", content: "Reserve your HermesWorld name" },
+      { property: "og:title", content: "Reserve your HermesChiWorld name" },
       {
         property: "og:description",
         content:
-          "Claim your username before HermesWorld launches. Limited founder rewards for early reservers.",
+          "Claim your username before HermesChiWorld launches. Limited founder rewards for early reservers.",
       },
-      { property: "og:image", content: "https://hermes-world.ai/assets/hermesworld/zones/zone-3.jpg" },
+      { property: "og:image", content: "https://hermeschiworld.ir/assets/hermeschiworld/zones/zone-3.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
@@ -39,7 +39,7 @@ function ReserveRoute() {
 
   useEffect(() => {
     let cancelled = false;
-    fetch("/api/hermesworld/reservations", { cache: "no-store" })
+    fetch("/api/hermeschiworld/reservations", { cache: "no-store" })
       .then(r => r.json())
       .then((d: { ok: boolean; count?: number; error?: string }) => {
         if (cancelled) return;
@@ -62,7 +62,7 @@ function ReserveRoute() {
     setSubmit({ state: "submitting", message: null });
 
     try {
-      const res = await fetch("/api/hermesworld/reservations", {
+      const res = await fetch("/api/hermeschiworld/reservations", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ desiredName, email, wallet: wallet || null }),
@@ -89,7 +89,7 @@ function ReserveRoute() {
       <div className="w-full max-w-xl">
         <div className="text-center mb-10">
           <a href="/" className="inline-flex items-center gap-3 text-sm text-[#aab9b2] hover:text-[#fff4dc] transition-colors mb-8">
-            ← Back to HermesWorld
+            ← Back to HermesChiWorld
           </a>
           <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-full border border-[#f1c56d]/30 bg-[#f1c56d]/10 text-[#f1c56d] text-[10px] font-bold uppercase tracking-[0.22em]">
             Founder Reservations Open
@@ -100,7 +100,7 @@ function ReserveRoute() {
             </span>
           </h1>
           <p className="text-[#aab9b2] text-base leading-relaxed max-w-md mx-auto">
-            HermesWorld launches soon. First reservers get founder gear, sigil drops, and early access to the world.
+            HermesChiWorld launches soon. First reservers get founder gear, sigil drops, and early access to the world.
           </p>
           <div className="mt-6 text-xs uppercase tracking-[0.2em] text-[#aab9b2]">
             {counter.loading
@@ -119,13 +119,13 @@ function ReserveRoute() {
             </h2>
             <p className="text-[#aab9b2] text-base leading-relaxed mb-6">
               <strong className="text-[#fff4dc]">{submit.reservation.desiredName}</strong> is reserved for you.
-              We'll email you when HermesWorld opens for founders.
+              We'll email you when HermesChiWorld opens for founders.
             </p>
             <a
               href="/"
               className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-b from-[#ffe6a4] via-[#e9aa3c] to-[#a95d18] text-[#160f07] font-bold text-sm border border-[#ffe5a8]/75 shadow-[0_22px_60px_rgba(244,166,54,0.25)]"
             >
-              Back to HermesWorld
+              Back to HermesChiWorld
             </a>
           </div>
         ) : (
@@ -198,7 +198,7 @@ function ReserveRoute() {
             </button>
 
             <p className="text-[11px] text-center text-[#aab9b2]/70 leading-relaxed">
-              No password required. We'll email you when HermesWorld opens.
+              No password required. We'll email you when HermesChiWorld opens.
             </p>
           </form>
         )}

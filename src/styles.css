@@ -56,7 +56,7 @@
 :root {
   --radius: 0.5rem;
 
-  /* Brand palette — HermesWorld simplified brand sheet */
+  /* Brand palette — HermesChiWorld simplified brand sheet */
   --gold: #f1c56d;
   --gold-soft: #f8de9a;
   --bronze: #b8862b;
@@ -306,4 +306,74 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .hw-kenburns { animation: none; }
+}
+
+/* ── Vazirmatn font for Persian + RTL support ── */
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+
+html[lang='fa'] body,
+html[lang='fa'] button,
+html[lang='fa'] input,
+html[lang='fa'] textarea,
+html[lang='fa'] select,
+html[lang='fa'] h1,
+html[lang='fa'] h2,
+html[lang='fa'] h3,
+html[lang='fa'] h4,
+html[lang='fa'] h5,
+html[lang='fa'] h6,
+html[lang='fa'] p,
+html[lang='fa'] span,
+html[lang='fa'] a,
+html[lang='fa'] div,
+html[lang='fa'] label,
+html[lang='fa'] code,
+html[lang='fa'] pre,
+html[lang='fa'] li,
+html[lang='fa'] td,
+html[lang='fa'] th {
+  font-family: 'Vazirmatn', 'Inter', 'Tahoma', sans-serif !important;
+}
+
+html[lang='fa'] {
+  --font-sans: 'Vazirmatn', 'Inter', sans-serif;
+  --font-serif: 'Vazirmatn', 'Inter', sans-serif;
+  --font-display: 'Vazirmatn', 'Inter', sans-serif;
+}
+
+html[lang='fa'] body {
+  line-height: 1.85;
+}
+
+html[dir='rtl'] .reveal-block {
+  text-align: right;
+}
+
+html[dir='rtl'] .terminal-command,
+html[dir='rtl'] pre,
+html[dir='rtl'] code {
+  direction: ltr;
+  text-align: left;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--muted-foreground);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.lang-toggle:hover {
+  background: var(--accent);
+  border-color: var(--ring);
+  color: var(--accent-foreground);
 }
